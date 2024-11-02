@@ -1,0 +1,35 @@
+<div *ngIf="loading" class="loading">
+  Cargando tareas...
+</div>
+
+<div *ngIf="error" class="error-message">
+  {{ error }}
+</div>
+
+<div class="checked-completed">
+  <label>
+    <input type="checkbox" (change)="toggleCompletedFilter($event)" [checked]="completedFilter">
+    Mostrar completadas
+  </label>
+</div>
+
+<div *ngIf="!loading && !error && tasks.length > 0">
+  <ul>
+    <li *ngFor="let task of tasks" [ngClass]="{'completed-task': task.completed}">
+      <div class="detail">
+        <h3>{{ task.title }}</h3>
+        <p><strong>Completada:</strong> {{ task.completed ? 'Sí' : 'No' }}</p>
+        <p><strong>Creada el:</strong> {{ task.createdAt | date: 'short' }}</p>
+      </div>
+      <section class="btn_acciones">
+        <button class="btn-edit" [routerLink]="['/task-form']" [queryParams]="{ task_id: task._id }">Editar</button>
+        <button class="btn-delete" (click)="eliminarTarea(task._id)">Eliminar</button>
+      </section>
+
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="!loading && !error && tasks.length === 0" class="no-tasks">
+  No se encontraron tareas.
+</div>

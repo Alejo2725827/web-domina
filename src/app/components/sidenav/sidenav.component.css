@@ -1,0 +1,60 @@
+.logo {
+    margin-bottom: 20px;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 25px;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo-image {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    padding: 20px; 
+}
+
+.item.logout {
+    margin-top: auto;
+}
+
+.item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+}
+
+.item:hover {
+    color: #12415f;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    user-select: none;
+}
+
+.item>p {
+    color: white;
+    margin: 0;
+    user-select: none;
+}
+
+h2 {
+    color: #12415f;
+}

@@ -1,0 +1,12 @@
+<div class="login-container">
+    <h2>Registro</h2>
+    <form (ngSubmit)="register()">
+      <input type="text" placeholder="Nombre" [(ngModel)]="name" name="name" required>
+      <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+      <input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password" required>
+      <button type="submit" [disabled]="loading">Registrar</button>
+      <div *ngIf="loading" class="loading">Cargando...</div>
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    </form>
+  </div>
+  

@@ -1,20 +1,21 @@
-/* body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 100vh; 
 }
 
 .sidenav {
-    width: 300px;
+    width: 300px; 
     color: white;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    border-radius: 25px;
+    padding: 20px;
+    background-color: #12415f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -27,15 +28,14 @@
 }
 
 .logo-image {
-    width: 100%;
+    width: 100%; 
 }
 
 .main-content {
     flex: 1;
     padding: 20px;
-    border-left: 1px solid #e0e0e0;
-    margin: 20px 20px 20px 20px;
+    border-left: 1px solid #e0e0e0; 
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-
-} */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);    
+    margin: 0; 
+}

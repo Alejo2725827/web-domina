@@ -1,0 +1,85 @@
+.login-container {
+    max-width: 400px;
+    margin: 100px auto; /* Centra el contenedor verticalmente */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .registro-link {
+    text-decoration: none; /* Quitar subrayado */
+    color: #007bff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 15px; /* Espaciado */
+    border: 1px solid transparent; /* Bordes para efectos al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+  }
+  
+  .registro-link:hover {
+    color: #ffffff; /* Color del texto al pasar el mouse */
+    background-color: #007bff; /* Color de fondo al pasar el mouse */
+    border-color: #007bff; /* Color del borde al pasar el mouse */
+  }
+  
+  

@@ -1,0 +1,85 @@
+.loading {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.checked-completed {
+  padding: 20px;
+}
+
+.checked-completed>* {
+  font-size: 35px;
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+  cursor:pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_acciones{
+  display: flex;
+  gap: 5px;
+}
+
+.btn-delete {
+  height: 30px;
+  background-color: #f8d7da; 
+  color: #721c24; 
+  border: none;
+  border-radius: 4px; 
+  padding: 8px 12px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-delete:hover {
+  background-color: #f5c6cb; /* Color más intenso al pasar el ratón */
+}
+
+
+.btn-edit {
+  height: 30px;
+  background-color: #007bff65; /* Azul suave */
+  color: rgb(27, 27, 145);
+  padding: 8px 12px; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+
+.completed-task {
+  background-color: #d4edda;
+  /* Color para tareas completadas */
+  border-color: #c3e6cb;
+}
+
+.no-tasks {
+  font-size: 16px;
+  color: #555;
+}

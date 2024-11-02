@@ -1,0 +1,48 @@
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.error-message {
+  color: red;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.completed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px
+}
+
+.completed > label{
+  font-size: 18px;
+}
+input[type=checkbox] {
+  transform: scale(2);
+  cursor:pointer;
+}

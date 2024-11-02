@@ -1,0 +1,24 @@
+<div *ngIf="loading" class="loading">
+  Cargando tarea...
+</div>
+
+<div *ngIf="error" class="error-message">
+  {{ error }}
+</div>
+
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Título de la tarea:</label>
+    <input id="title" formControlName="title" placeholder="Ingrese el título de la tarea" />
+    <div *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched">
+      <small class="error-message">El título es obligatorio.</small>
+    </div>
+  </div>
+
+  <div *ngIf="taskId" class="completed">
+    <label for="completed">Completada:</label>
+    <input type="checkbox" id="completed" formControlName="completed" />
+  </div>
+
+  <button type="submit" [disabled]="taskForm.invalid">Guardar</button>
+</form>

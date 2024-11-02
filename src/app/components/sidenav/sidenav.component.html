@@ -1,0 +1,19 @@
+<aside>
+    <div class="logo">
+        <img src="https://media.graphassets.com/J60Hvy4YS5C3ZbCZC1kz" alt="Logo" class="logo-image">
+    </div>
+    <nav class="sidenav">
+        <section class="item" [routerLink]="['/my-tasks']">
+            <span class="material-icons">tasks</span>
+            <p>Tareas</p>
+        </section>
+        <section class="item" [routerLink]="['/task-form']">
+            <span class="material-icons">add</span>
+            <p>Agregar tarea</p>
+        </section>
+        <section class="item logout" (click)="logout()">
+            <span class="material-icons">logout</span>
+            <p>Cerrar sesión</p>
+        </section>
+    </nav>
+</aside>
